@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>引擎实测 · 空天文件转换</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 28px 18px 60px; font: 15px/1.65 "Segoe UI", "Microsoft YaHei", system-ui, sans-serif; background: #0b1220; color: #e6edf7; }
+  main { max-width: 980px; margin: 0 auto; }
+  h1 { font-size: 22px; margin: 0 0 6px; }
+  .env { color: #9fb0c9; font-size: 13px; margin-bottom: 18px; }
+  .summary { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+  .stat { padding: 10px 16px; border-radius: 10px; background: #131e33; border: 1px solid #22304d; font-weight: 600; }
+  .stat.pass { color: #4ade80; } .stat.fail { color: #f87171; } .stat.skip { color: #fbbf24; }
+  #list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+  li { display: grid; grid-template-columns: 74px 1fr; gap: 12px; align-items: start; padding: 10px 14px; border-radius: 10px; background: #101a2c; border: 1px solid #1e2b45; }
+  .tag { font-size: 12px; font-weight: 700; text-align: center; padding: 2px 0; border-radius: 6px; }
+  .tag.run { background: #23324d; color: #c7d6ef; }
+  .tag.pass { background: #10321f; color: #4ade80; }
+  .tag.fail { background: #3a1418; color: #f87171; }
+  .tag.skip { background: #3a2c0e; color: #fbbf24; }
+  .name { font-weight: 600; }
+  .detail { font-size: 12.5px; color: #93a6c1; word-break: break-word; margin-top: 2px; white-space: pre-wrap; }
+  .detail.err { color: #fca5a5; }
+  footer { margin-top: 26px; color: #7c8ea8; font-size: 12px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>空天文件转换 · 引擎实测</h1>
+  <p class="env" id="env">正在初始化…</p>
+  <div class="summary">
+    <div class="stat" id="stat-total">总计 0</div>
+    <div class="stat pass" id="stat-pass">通过 0</div>
+    <div class="stat fail" id="stat-fail">失败 0</div>
+    <div class="stat skip" id="stat-skip">跳过 0</div>
+  </div>
+  <ol id="list"></ol>
+  <footer>本页在浏览器内生成全部测试素材并执行真实转换，不经过任何后端；完成后结果会写入 window.__KT_TEST_RESULT__。</footer>
+</main>
+<script type="module" src="./test.js"></script>
+</body>
+</html>

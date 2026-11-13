@@ -1,0 +1,8 @@
+# 测试页运行时输出（由 dev/serve.mjs 写入）
+tests/last-*.json
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+node_modules/
+*.log

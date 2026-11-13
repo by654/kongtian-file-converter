@@ -236,6 +236,12 @@
 
 ## 八、本地与局域网访问
 
+### GitHub Pages
+
+- 仓库：`https://github.com/by654/kongtian-file-converter`
+- 线上地址：`https://by654.github.io/kongtian-file-converter/`
+- 部署方式：Pages → Deploy from a branch → `main` / `/ (root)`；纯静态，无构建步骤，推送即发布。
+
 ```powershell
 cd C:\Users\by654\Desktop\KongTianFileConverter
 node dev/serve.mjs
